@@ -1,5 +1,5 @@
 # Tic-Tac-Toe
-🎮 **Tic-Tac-Toe in C**
+## 🎮 **Tic-Tac-Toe in C**
 
   A console-based Tic-Tac-Toe game written in C featuring:
 
@@ -14,9 +14,9 @@
 ✅ Clean board rendering
 
 
-🧠 Difficulty Levels
+## 🧠 Difficulty Levels
 
-  The game includes different AI difficulties with increasing intelligence.
+The game includes different AI difficulties with increasing intelligence.
 
 🟢 Easy
 
@@ -52,7 +52,8 @@ Take sides
 
 Much harder to defeat.
 
-🖥️ How to Play
+
+## 🖥️ How to Play
 
 Board positions:
 
@@ -64,7 +65,7 @@ Board positions:
 
 Choose a number between 0 and 8 to make your move.
 
-🧩 Project Structure
+## 🧩 Project Structure
 
 main() → Game loop
 
@@ -83,7 +84,7 @@ tied() → Checks draw
 legalPlay() → Validates moves
 
 
-🧠 Concepts Used
+## 🧠 Concepts Used
 
 2D arrays
 
@@ -98,7 +99,7 @@ Random number generation (rand)
 Basic AI logic
 
 
-🚀 Future Improvements
+## 🚀 Future Improvements
 
 Minimax algorithm (unbeatable AI)
 
@@ -110,4 +111,6 @@ Better UI
 
 Cross-platform
 
-📚  /*Developed as a C programming practice project.*/
+---
+
+>  *Developed as a C programming practice project.*
