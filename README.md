@@ -13,6 +13,7 @@
 
 ✅ Clean board rendering
 
+
 🧠 Difficulty Levels
 
   The game includes different AI difficulties with increasing intelligence.
@@ -56,9 +57,10 @@ Much harder to defeat.
 Board positions:
 
 0 1 2
-3 4 5
-6 7 8
 
+3 4 5
+
+6 7 8
 
 Choose a number between 0 and 8 to make your move.
 
