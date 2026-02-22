@@ -20,6 +20,8 @@ char current();
 void play();
 bool legalPlay(int i , int j);
 void IAplay();
+void showNumBoard ();
+void ShowColorTab();
 
 int main()
 {
@@ -29,27 +31,29 @@ int main()
 
     while(!tied() && !victory())
     {
-        system("clear");
+        system("cls");
+        showNumBoard();
         ShowTab();
         play();
         if (!tied() && !victory())
             IAplay();
     }
-    system("clear");
+    system("cls");
     printf("\n--FINAL BOARD--\n");
-    ShowTab();
+    ShowColorTab();
 
     int winner = victory();
     if(winner != 0)
     {
         if (winner == 1)
-        printf("WINNER - Player\n");
+        printf("\033[1;34mWINNER - Player\033[0m\n");
         else
-        printf("WINNER - IA\n");
+        printf("\033[1;31mWINNER - IA\033[0m\n");
     }
 
     else
-    printf("That's a TIE!\n");
+    printf("\033[1;33mThat's a TIE\033[0m\n");
+
 
     return 0;
 }
@@ -85,9 +89,10 @@ void play()
         do{
             printf("Play: ");
             scanf(" %99s", playSqr);
+            
         }while(sscanf(playSqr, "%d", &playNum) != 1);
-
-
+        
+        playNum = playNum - 1;
         i = playNum / 3;
         j = playNum % 3;
 
@@ -186,8 +191,8 @@ void IAplay()
     return;
 }
 
-
 bool tied()
+
 {
     for (int i = 0; i < 3; i++)
     {
@@ -222,4 +227,35 @@ bool legalPlay(int i , int j)
     if (i>=0 && i < 3 && j>=0 && j < 3 && board[i][j] == '-')
         return true;
     return false;
+}
+
+void showNumBoard ()
+{
+    int a = 1;
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            printf("%i ", a++);
+        }
+        printf("\n");
+    }
+    printf("\n");
+}
+
+
+void ShowColorTab()
+{
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            if ( (i+j) % 2 == 0 )
+                printf("\033[37;40m %c \033[0m", board[i][j]);
+            else
+                printf("\033[30;47m %c \033[0m", board[i][j]);
+                
+        }
+        printf("\n");
+    }
 }
