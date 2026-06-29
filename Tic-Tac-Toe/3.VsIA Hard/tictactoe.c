@@ -40,7 +40,7 @@ int main()
     }
     system("cls");
     printf("\n--FINAL BOARD--\n");
-    ShowColorTab();
+    ShowTab();
 
     int winner = victory();
     if(winner != 0)
