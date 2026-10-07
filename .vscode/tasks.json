@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compilar Raylib",
+            "type": "shell",
+            "command": "C:/msys64/mingw64/bin/gcc.exe",
+            "args": [
+                "C:/Users/gutol/Documents/GitHub/Tic-Tac-Toe/UI/main.c",
+                "C:/Users/gutol/Documents/GitHub/Tic-Tac-Toe/UI/game/game.c",
+                "C:/Users/gutol/Documents/GitHub/Tic-Tac-Toe/UI/UI/design.c",
+                "-o",
+                "C:/Users/gutol/Documents/GitHub/Tic-Tac-Toe/UI/a.exe",
+                "-IC:/raylib/raylib/src",
+                "-LC:/raylib/raylib/src",
+                "-lraylib",
+                "-lopengl32",
+                "-lgdi32",
+                "-lwinmm"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}

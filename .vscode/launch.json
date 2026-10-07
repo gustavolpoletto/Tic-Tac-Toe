@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Executar Raylib",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "C:/Users/gutol/Documents/GitHub/Tic-Tac-Toe/UI/a.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "C:/Users/gutol/Documents/GitHub/Tic-Tac-Toe/UI",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:/msys64/mingw64/bin/gdb.exe",
+            "preLaunchTask": "Compilar Raylib"
+        }
+    ]
+}
